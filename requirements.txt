@@ -1,0 +1,6 @@
+pandas
+numpy
+yfinance
+pandas-ta
+matplotlib
+python-dotenv
