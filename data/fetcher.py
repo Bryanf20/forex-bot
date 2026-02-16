@@ -30,3 +30,19 @@ class MarketDataFetcher:
                 return cached.tail(limit)
 
             raise RuntimeError("No data available from provider or cache") from e
+
+
+
+# class MarketDataFetcher:
+
+#     def fetch(self, symbol, timeframe, limit):
+#         if self.use_cache:
+#             cached = load_from_cache(symbol, timeframe)
+#             if cached is not None and is_cache_fresh(timeframe, cached):
+#                 return cached.tail(limit)
+
+#         df = self.provider.get_ohlc(symbol, timeframe, limit)
+#         validate_ohlc(df)
+#         save_to_cache(df, symbol, timeframe)
+#         return df
+
