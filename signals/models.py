@@ -1,7 +1,6 @@
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from datetime import datetime
-from typing import List
-
+from typing import List, Optional
 
 @dataclass
 class Signal:
@@ -11,3 +10,9 @@ class Signal:
     confidence: float
     reasons: List[str]
     timestamp: datetime
+
+    # Execution levels
+    entry: Optional[float] = None
+    sl: Optional[float] = None
+    tp: Optional[float] = None
+    rr_ratio: float = 2.0

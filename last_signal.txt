@@ -1,0 +1,19 @@
+Loading AUDUSD=X 1h...
+  [cache] Using fresh cache for AUDUSD=X 1h
+Loading AUDUSD=X 4H for higher-TF confirmation...
+
+── LIVE SIGNAL ──────────────────────────────────────
+pair      : AUDUSD=X  (1h + 4H confirmation)
+close     : 0.696301
+ema_20    : 0.697584  ema_50 : 0.698601
+rsi       : 45.49 → 42.69
+decision  : SELL  confidence : 0.491
+reasons:
+  EMA(20) is below EMA(50)
+  RSI is below 45 and falling
+  ✅ Higher TF confirms: SELL — STRONG signal
+entry     : 0.696301
+sl        : 0.698562
+tp        : 0.691781
+R:R       : 1:2
+Chart saved → charts/AUDUSDX_1h_20260325_1025.png
